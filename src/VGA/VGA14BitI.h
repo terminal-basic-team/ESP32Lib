@@ -9,6 +9,7 @@
 		https://github.com/bitluni
 		http://bitluni.net
 */
+
 #pragma once
 #include "VGA.h"
 #include "../Graphics/GraphicsR5G5B4A2.h"
@@ -103,7 +104,7 @@ class VGA14BitI : public VGA, public GraphicsR5G5B4A2
   protected:
 	bool useInterrupt()
 	{ 
-		return true; 
+		return true;
 	};
 
 	static void interrupt(void *arg);
